@@ -12,6 +12,15 @@
 ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 */
+
+@mixin margin-auto {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
 @mixin respond($breakpoint) {
   // Phone-xs
   @if $breakpoint == phone-xs {
@@ -51,7 +60,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   }
 }
 
-// Border White Mixin
 @mixin section-borders {
   border: 1.5rem solid #fff;
   border-top: 0;
@@ -59,7 +67,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 }
 
 @mixin supportColorForIE11 {
-  // Fall for text-gradient not supported in IE11
   color: $secondary-color;
   -webkit-text-fill-color: $secondary-color; // fallback
   @supports (-webkit-background-clip: text) or (background-clip: text) {
@@ -75,7 +82,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 }
 
 @mixin supportIE11 {
-  // Provide your basic styles to support IE11
   @media screen and (-ms-high-contrast: active),
     screen and (-ms-high-contrast: none) {
     @content;

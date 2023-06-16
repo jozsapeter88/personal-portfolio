@@ -1,0 +1,33 @@
+#skills * {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .section-title {
+    color: white;
+    }
+
+    i {
+        font-size: 100px;
+    }
+}
+
+#skills .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills .wrapper div {
+    margin: 10px;
+}
+
+#skills .wrapper div i {
+    font-size: 100px;
+    transition: transform 0.3s ease;
+}
+
+#skills .wrapper div:hover i {
+    transform: scale(1.2);
+}

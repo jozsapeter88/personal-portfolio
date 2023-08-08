@@ -15,14 +15,10 @@ The project is made with
 <b>
 Javascript
 </b>
-</span>, 
+</span>and
 <span style="color: #5ED3F3; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 ">
-<b>
-React
-</b>
 </span>
-, and 
 <span style="color: #C76494; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 ">
 <b>

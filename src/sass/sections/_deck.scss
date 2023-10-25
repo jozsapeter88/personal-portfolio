@@ -1,7 +1,7 @@
 $dark-blue: #26293C;
 $light-green: #B2D9A6;
 $yellow: #FFD433;
-$gray: #c0c3d7;
+$gray: #36373b;
 $light-blue: #C6E1ED;
 $light-pink: #FFD3D4;
 $orange: #FF582C;
@@ -10,6 +10,7 @@ $purple: #782C4A;
 $light-purple: lighten($purple, 35%);
 $red: #c0392b;
 $pale-red: rgba($red, .6);
+$white: rgb(255, 255, 255);
 
 body {
   background-color: darken($dark-blue, 5%);
@@ -44,7 +45,7 @@ body {
   top: -1.5em;
   left: 0em;
   border-radius: 8px;
-  background: linear-gradient(109.61deg, lighten($dark-blue, 3%) 4.26%, darken($dark-blue, 3%) 84.84%);
+  background: linear-gradient(135deg, #cab70e 0%, #e2d482 100%);
 }
 
 @media (max-width: 550px) {
@@ -55,7 +56,7 @@ body {
 
 .card {
   position: relative;
-  background-color: lighten($dark-blue, 5%);
+  background-color: lighten($gray, 5%);
   padding: 1em;
   z-index: 5;
   border-radius: 2px;
@@ -176,7 +177,7 @@ body {
 .cardBody .cardText {
   margin: 0 10px 0 0;
   white-space: pre-line;
-  color: $gray;
+  color: $white;
   font-weight: 400;
   line-height: 1.5;
 }

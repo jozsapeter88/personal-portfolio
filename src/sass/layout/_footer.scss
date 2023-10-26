@@ -214,3 +214,38 @@
 .footer .social-links ul li a.gmail:hover span {
   background: #dd4b39;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2rem 0; /* Adjust padding for smaller screens */
+  }
+
+  .social-links {
+    flex-direction: column; /* Stack social links vertically for smaller screens */
+    align-items: center; /* Center align social links */
+
+    a {
+      margin: 1rem 0; /* Add spacing between social links */
+      width: auto; /* Adjust the width for better responsiveness */
+    }
+  }
+
+  .footer .social-links {
+    display: flex;
+    flex-direction: column; /* Stack social links vertically for smaller screens */
+    text-align: center; /* Center align the links */
+    padding: 10px 0; /* Adjust padding for better spacing */
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 1.5rem 0; /* Further reduce padding for smaller screens */
+  }
+
+  .footer .social-links {
+    display: flex;
+    flex-direction: column; /* Stack social links vertically for smaller screens */
+    text-align: center; /* Center align the links */
+    padding: 10px 0; /* Adjust padding for better spacing */
+  }
+}

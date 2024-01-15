@@ -1,10 +1,8 @@
 #about {
   background-color: $primary-color;
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
+  background-image: linear-gradient(135deg,
+      $primary-color 0%,
+      $secondary-color 100%);
   color: $white-color;
   height: 100%;
   border-top: 0px;
@@ -32,6 +30,7 @@
       @include respond(tab-land) {
         height: 100%;
       }
+
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
       }
@@ -51,11 +50,12 @@
         text-align: left;
         background-color: rgba(0, 0, 0, 0.2);
         color: white;
-        padding: 10px; 
+        padding: 10px;
 
         @include respond(tab-port) {
           text-align: left;
         }
+
         @include respond(tab-port-sm) {
           text-align: center;
         }
@@ -79,5 +79,49 @@
       }
     }
   }
+
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    grid-gap: 0.5rem;
+
+    .image {
+      position: relative;
+      padding-bottom: 100%;
+
+      img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        left: 0;
+        position: absolute;
+        top: 0;
+
+        &:nth-of-type(1) {
+          filter: grayscale(1) brightness(80%);
+        }
+
+        &:nth-of-type(2) {
+          -webkit-clip-path: var(--clip-start);
+          clip-path: var(--clip-start);
+          transition: -webkit-clip-path 0.5s;
+          transition: clip-path 0.5s;
+          transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+        }
+      }
+
+      &:hover {
+        img {
+          &:nth-of-type(2) {
+            -webkit-clip-path: var(--clip-end);
+            clip-path: var(--clip-end);
+          }
+        }
+      }
+    }
+  }
+
 
 }

@@ -38,56 +38,72 @@
 
   <!-- **** About Section **** -->
   <section id="about">
-    <div class="container">   
+    <div class="container">
       <h2 class="section-title load-hidden">About me</h2>
       <div class="row about-wrapper">
         <div class="col-md-6 col-sm-12">
           <div class="about-wrapper__image load-hidden">
-            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px"
-              src="assets/profile.png" alt="Profile Image" />
+            <div class="image-container">
+
+              <div class="image" style="--clip-start: inset(100% 100% 100% 100%); --clip-end: inset(0 0 0 0);">
+                <img src="assets/p.png" width="auto" height="500px" /><img src="assets/p.png" width="auto" height="500px" /></div>
+
+            </div>
           </div>
-          <span style="justify-content: space-between; align-items: center; margin-top: 10px;"> 
+          <span style="justify-content: space-between; align-items: center; margin-top: 10px;">
           </span>
         </div>
-        
-        <div class="col-md-6 col-sm-12">
-            <div class='deck'>
-              <div class='card'>
-                <header class='cardHeader'>
-                  <i></i>
-                  <span class='cardHeader_account'>@intro</span>
-                </header>
-                <div class='cardBody'>
-                  <p class='cardText'>
-                    I've been learning web development since the September of 2022 both on the front and backend. I love the problem-solving aspect of programming, and the possbility to express my creativity through web applications.
-                  </p>
-                </div>
-              </div>
-              <div class='card'>
-                <header class='cardHeader'>
-                  <i></i>
-                  <span class='cardHeader_account'>@csharp</span>
-                </header>
-                <div class='cardBody'>
-                  <p class='cardText'>
-                    My journey as a web developer has equipped me with the valuable strength of being a full-stack developer. On the back-end, I have experience with technologies such as Node.js and C#, and can take advantage of the power of ASP.NET framework to create server-side solutions. On the front-end, I primarily utilize React to craft client solutions and user interfaces that are not only visually appealing but also highly functional. I'm well-versed in database management, having worked with databases like PostgreSQL and Microsoft SQL. Furthermore, I'm familiar with Docker for containerization, Git for version control, and the CI-CD practises.
-                  </p>
-                  <section class='cardStats'>
-                </div>
-              </div>
 
-              <div class='card'>
-                <header class='cardHeader'>
-                  <i></i>
-                  <span class='cardHeader_account'>@personal</span>
-                </header>
-                <div class='cardBody'>
-                  <p class='cardText'>
-                    I'm constantly driven to improve myself, which is why I make it a point to stay up to date with the latest advancements in the tech world. Whether it's exploring new programming languages, keeping up with emerging trends, or tinkering with innovative gadgets, I'm always eager to broaden my horizons in the ever-evolving world of technology. I spend most of my free time either socializing, learning languages and doing sports. I actively practise thai boxing and I have a deep enthusiasm for basketball as I'm a huge fan of the NBA. Additionally, I find joy in outdoor activities such as cycling and running as a means to stay active and maintain a balanced lifestyle.
-                  </p>
-                </div>
+        <div class="col-md-6 col-sm-12">
+          <div class='deck'>
+            <div class='card'>
+              <header class='cardHeader'>
+                <i></i>
+                <span class='cardHeader_account'>@intro</span>
+              </header>
+              <div class='cardBody'>
+                <p class='cardText'>
+                  I've been learning web development since the September of 2022 both on the front and backend. I love
+                  the problem-solving aspect of programming, and the possbility to express my creativity through web
+                  applications.
+                </p>
               </div>
             </div>
+            <div class='card'>
+              <header class='cardHeader'>
+                <i></i>
+                <span class='cardHeader_account'>@csharp</span>
+              </header>
+              <div class='cardBody'>
+                <p class='cardText'>
+                  My journey as a web developer has equipped me with the value of being a full-stack
+                  developer. On the back-end, I have experience with Node.js and C#, and can take
+                  advantage of the power of ASP.NET framework to create server-side solutions. On the front-end, I
+                  primarily utilize React to craft client solutions and user interfaces that are not only visually
+                  appealing but also highly functional. I'm well-versed in database management, having worked with
+                  databases like PostgreSQL and Microsoft SQL. Furthermore, I'm familiar with Docker for
+                  containerization, Git for version control, and some of the CI-CD practises.
+                </p>
+                <section class='cardStats'>
+              </div>
+            </div>
+
+            <div class='card'>
+              <header class='cardHeader'>
+                <i></i>
+                <span class='cardHeader_account'>@personal</span>
+              </header>
+              <div class='cardBody'>
+                <p class='cardText'>
+                  I'm constantly driven to improve myself, and I'm trying to stay up to date with the
+                  latest advancements in the tech world. Whether it's exploring new programming languages orkeeping up
+                  with emerging trends, I'm always eager to follow the world of technology. I spend most of my free time either socializing, learning
+                  languages and doing sports. I actively practise thai boxing and I have a deep enthusiasm for
+                  basketball. Additionally, I find joy in outdoor activities as a means to stay active and maintain a balanced lifestyle.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -113,13 +129,14 @@
                   the order process.
                 </p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
                 href="https://github.com/jozsapeter88/stock-manager">
                 GitHub
               </a>
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/jozsapeter88/stock-manager">
+                See live
+              </a> -->
             </div>
           </div>
           <div class="col-lg-8 col-sm-12">
@@ -138,6 +155,41 @@
         <div class="row">
           <div class="col-lg-4 col-sm-12">
             <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">NewsWhiz</h3>
+              <div>
+                <p class="mb-4">
+                  A personal project currently in development, with the primary goal to practice Web API and fullstack
+                  technologies.
+                  The application (in its current state) helps the user to scrape an article from a website, save and
+                  edit its content.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://github.com/jozsapeter88/NewsWhiz">
+                GitHub
+              </a>
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/jozsapeter88/stock-manager">
+                See live
+              </a> -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/project3.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Goal.NET</h3>
               <div>
                 <p class="mb-4">
@@ -146,13 +198,14 @@
                   on a football fantasy-team system.
                 </p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
                 href="https://github.com/jozsapeter88/Goal.NET">
                 GitHub
               </a>
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/jozsapeter88/stock-manager">
+                See live
+              </a> -->
             </div>
           </div>
           <div class="col-lg-8 col-sm-12">
@@ -166,6 +219,7 @@
             </div>
           </div>
         </div>
+
         <!-- /END Project -->
       </div>
     </div>
@@ -223,11 +277,12 @@
   </section>
   <!-- /END Skills Section -->
 
-  
+
   <!-- **** Contact Section **** -->
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <a rel="noreferrer" target="_blank" style="padding: 10px 20px;" class=" cta-btn cta-btn--resume" href="assets/resume.pdf">
+    <a rel="noreferrer" target="_blank" style="padding: 10px 20px;" class=" cta-btn cta-btn--resume"
+      href="assets/resume.pdf">
       View Resume
     </a>
     <footer class="footer">

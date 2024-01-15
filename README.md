@@ -42,4 +42,4 @@ Once the server has started, use the port `1234` to see the portfolio locally.
 ## <span style="font-size: 24px"><b>Showcase on 1920x1080 display 🖥️</b></span> <br>
 <span style="font-size: 14px"><i> Layouts and rations may vary based on the viewer's environment </i></span>
 
-![Showcase Image](https://i.imgur.com/N0DS2PL.png)
+![preview](https://github.com/jozsapeter88/personal-portfolio/assets/113460628/cf3b9328-0c98-4f15-bd1f-aee6d782be56)
